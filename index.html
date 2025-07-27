@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>MythosKey.com - Domain For Sale</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #ffffff;
+      background-color: #0a0a0a;
+      color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: radial-gradient(circle at center, #111 0%, #000 100%);
+    }
+
+    .logo {
+      margin-top: 40px;
+    }
+
+    .logo img {
+      max-width: 300px;
+      height: auto;
+      filter: drop-shadow(0 0 10px #1e90ff);
+    }
+
+    .content {
       text-align: center;
-    }
-
-    header {
-      padding: 60px 20px 30px;
-    }
-
-    header img {
-      max-width: 180px;
-      filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.7));
+      margin-top: 40px;
+      padding: 0 20px;
     }
 
     h1 {
-      font-size: 2.7em;
-      margin-top: 20px;
-      background: linear-gradient(to right, #00c6ff, #7f00ff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      font-size: 2.5em;
+      color: #ffffff;
+      text-shadow: 0 0 8px #1e90ff;
     }
 
     p {
@@ -36,53 +44,69 @@
       color: #ccc;
       max-width: 600px;
       margin: 20px auto;
-      line-height: 1.6;
     }
 
-    .contact-box {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 10px;
-      padding: 30px;
-      max-width: 500px;
-      margin: 40px auto;
-    }
-
-    .contact-box h2 {
-      margin-bottom: 10px;
-      color: #00c6ff;
-    }
-
-    .email {
+    .contact {
+      margin-top: 30px;
       font-size: 1.1em;
-      color: #7fbcff;
+    }
+
+    .contact a {
+      color: #1e90ff;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
       text-decoration: underline;
-      word-break: break-word;
     }
 
     footer {
-      margin-top: 60px;
+      margin-top: auto;
       padding: 20px;
-      color: #888;
       font-size: 0.9em;
+      color: #666;
+      border-top: 1px solid #222;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Decorative side glow */
+    .side-glow::before,
+    .side-glow::after {
+      content: '';
+      position: fixed;
+      top: 0;
+      height: 100%;
+      width: 10px;
+      background: linear-gradient(to bottom, transparent, #1e90ff33, transparent);
+      z-index: -1;
+    }
+
+    .side-glow::before {
+      left: 0;
+    }
+
+    .side-glow::after {
+      right: 0;
     }
   </style>
 </head>
-<body>
-  <header>
-    <img src="logo.png" alt="MythosKey Logo" />
-    <h1>MythosKey.com</h1>
-    <p>This premium gaming & myth-inspired domain is now available for acquisition.<br>
-       Own the key to legends — perfect for a game store, brand, or project!</p>
+<body class="side-glow">
+  <div class="logo">
+    <img src="logo.jpg" alt="MythosKey Logo">
+  </div>
 
-    <div class="contact-box">
-      <h2>Interested in buying?</h2>
-      <p class="email">Contact: <a href="mailto:ivbaraa@gmail.com">ivbaraa@gmail.com</a></p>
+  <div class="content">
+    <h1>This Domain is For Sale</h1>
+    <p>Own a unique and memorable brand for gaming, mythology, or digital ventures. <strong>MythosKey.com</strong> is short, catchy, and perfect for standing out.</p>
+    
+    <div class="contact">
+      <p>For inquiries, contact: <a href="mailto:ivbaraa@gmail.com">ivbaraa@gmail.com</a></p>
     </div>
-  </header>
+  </div>
 
   <footer>
-    &copy; 2025 MythosKey.com — All rights reserved.
+    &copy; 2025 MythosKey. All rights reserved.
   </footer>
 </body>
 </html>
